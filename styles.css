@@ -9,17 +9,18 @@
   --bg:#e4eceb; --paper:#f7faf9; --ink:#22302e; --muted:#566664; --line:#b9c9c6;
   --teal:#3d5e5a; --teal-2:#7fb0a6; --mustard:#d9a326; --mustard-ink:#6b4f0c; --flag:#9a4b2c;
   --on-teal:#f2f7f6;
+  --band:#3d5e5a; --on-band:#f2f7f6; --band-accent:#f4cf6a;
   --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
   --body:"Figtree","Segoe UI",system-ui,sans-serif;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#1a2422; --paper:#22302e; --ink:#e6eeec; --muted:#9db3af; --line:#3e5552;
   --teal:#8fc2b8; --teal-2:#5d8f86; --mustard:#e2b54a; --mustard-ink:#f0cf7c; --flag:#e5926b;
-  --on-teal:#13201e; color-scheme:dark}}
+  --on-teal:#13201e; --band:#2c4744; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#1a2422; --paper:#22302e; --ink:#e6eeec; --muted:#9db3af; --line:#3e5552;
   --teal:#8fc2b8; --teal-2:#5d8f86; --mustard:#e2b54a; --mustard-ink:#f0cf7c; --flag:#e5926b;
-  --on-teal:#13201e; color-scheme:dark}
+  --on-teal:#13201e; --band:#2c4744; color-scheme:dark}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--body);margin:0}
@@ -91,17 +92,16 @@ details summary{cursor:pointer;color:var(--teal);font-weight:600;font-size:.95re
 .promise p{margin:0;color:var(--muted)}
 
 /* founding */
-.founding{background:var(--teal);color:var(--on-teal)}
+.founding{background:var(--band);color:var(--on-band)}
 .founding .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;padding-block:56px;align-items:start}
-.founding h2{font-size:clamp(1.8rem,3.5vw,2.4rem)}
+.founding h2{font-family:"Newsreader",Georgia,serif;font-weight:500;font-size:clamp(2rem,4vw,2.8rem);letter-spacing:-.01em}
 .founding p{margin:0}
 .founding .col{display:flex;flex-direction:column;gap:14px;min-width:0}
 .steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
-.steps li{display:grid;grid-template-columns:7.5rem 1fr;gap:12px;padding-bottom:14px;border-bottom:1px solid color-mix(in srgb,var(--on-teal) 30%,transparent)}
+.steps li{display:grid;grid-template-columns:7.5rem 1fr;gap:12px;padding-bottom:14px;border-bottom:1px solid color-mix(in srgb,var(--on-band) 30%,transparent)}
 .steps li:last-child{border-bottom:0}
-.steps b{font-family:var(--display);color:var(--mustard)}
-:root[data-theme="dark"] .steps b{color:var(--on-teal)}
-.founding a{color:var(--on-teal);font-weight:700}
+.steps b{font-family:var(--body);font-weight:700;color:var(--band-accent)}
+.founding a{color:var(--on-band);font-weight:700}
 
 /* footer */
 footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-block:32px 48px;font-size:.9rem;color:var(--muted)}
