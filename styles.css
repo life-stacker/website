@@ -33,6 +33,7 @@ h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.1}
 header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:22px}
 .brand{display:flex;align-items:center;gap:10px;font:500 1.55rem/1 "Newsreader",Georgia,serif;letter-spacing:-.01em;color:var(--ink);text-decoration:none}
 .brand em{font-style:italic;color:var(--teal)}
+.brand span{position:relative;top:.16em}
 .brand svg{flex:none}
 .navlink{white-space:nowrap;font-weight:600;font-size:.95rem;color:var(--teal);text-decoration:none;border:1.5px solid var(--teal);padding:7px 14px;border-radius:999px}
 
