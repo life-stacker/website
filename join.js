@@ -12,6 +12,7 @@
   }
 
   function done() {
+    document.getElementById('thanks-tester').hidden = !document.getElementById('tester').checked;
     form.hidden = true;
     thanks.hidden = false;
     thanks.setAttribute('tabindex', '-1');
