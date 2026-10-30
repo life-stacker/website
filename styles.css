@@ -203,3 +203,4 @@ button[disabled]{opacity:.6;cursor:wait}
   .closing h2{font-size:2.2rem}
   .cta{width:100%;padding:15px}
 }
+.sub .punch{display:block;color:var(--ink);font-weight:600;margin-bottom:6px}
