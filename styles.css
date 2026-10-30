@@ -173,35 +173,29 @@ button[disabled]{opacity:.6;cursor:wait}
 /* founding: timeline sits to the right edge so the empty space goes between the columns */
 @media (min-width:821px){.founding .wrap{grid-template-columns:minmax(0,520px) max-content;justify-content:space-between;gap:64px}}
 
-/* pitch sections: the forty tabs problem, sharing the load, a normal Tuesday, closing call to join */
+/* story sections: the problem, six outcomes in one grid with a normal Tuesday, closing call to join */
 .problem{border-top:1.5px solid var(--line)}
-.problem .wrap{max-width:760px;padding-block:64px;display:flex;flex-direction:column;gap:16px}
+.problem .wrap{max-width:820px;padding-block:60px;display:flex;flex-direction:column;gap:16px}
 .problem p{margin:0;color:var(--muted);font-size:1.1rem}
-.problem .big{font:500 clamp(1.9rem,4.2vw,2.7rem)/1.15 "Newsreader",Georgia,serif;letter-spacing:-.01em;color:var(--ink);text-wrap:balance;margin-bottom:6px}
+.problem .big{font:500 clamp(1.9rem,4.2vw,2.7rem)/1.15 "Newsreader",Georgia,serif;letter-spacing:-.01em;color:var(--ink);text-wrap:balance}
 .problem .big em{color:var(--teal)}
-.problem .turn{color:var(--ink);font-weight:600;font-size:1.2rem;margin-top:8px;padding-left:16px;border-left:3px solid var(--mustard)}
-.shared{border-top:1.5px solid var(--line)}
-.shared .wrap{padding-block:56px;display:flex;flex-direction:column;gap:28px}
-.shared h2,.closing h2{font:500 clamp(2rem,4vw,2.8rem)/1.1 "Newsreader",Georgia,serif;letter-spacing:-.01em}
-.shared h2 em,.closing h2 em{color:var(--teal)}
-.shared .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.shared .cols>div{background:var(--paper);border:1.5px solid var(--line);border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:6px}
-.shared h3{font:700 1.05rem/1.3 var(--body);color:var(--teal)}
-.shared .cols p{margin:0;color:var(--muted)}
-.tuesday{margin:0;max-width:760px;padding:4px 0 4px 20px;border-left:3px solid var(--mustard)}
+.promises .wrap{display:flex;flex-direction:column;gap:36px}
+.promises .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px 40px}
+.section-h,.closing h2{font:500 clamp(2rem,4vw,2.8rem)/1.1 "Newsreader",Georgia,serif;letter-spacing:-.01em}
+.section-h em,.closing h2 em{color:var(--teal)}
+.tuesday{margin:0;max-width:780px;padding:4px 0 4px 20px;border-left:3px solid var(--mustard)}
 .tuesday p{margin:0;font:italic 500 1.3rem/1.45 "Newsreader",Georgia,serif;color:var(--ink)}
 .closing .wrap{padding-block:64px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px}
 .closing p{margin:0;color:var(--muted);font-size:1.1rem}
 .cta{display:inline-block;margin-top:8px;font:700 1rem/1 var(--body);background:var(--teal);color:var(--on-teal);border-radius:12px;padding:15px 24px;text-decoration:none}
 .cta:hover{filter:brightness(1.08)}
-@media (max-width:820px){.shared .cols{grid-template-columns:1fr;gap:12px}}
+@media (max-width:820px){.promises .grid{grid-template-columns:1fr 1fr;gap:28px}}
 @media (max-width:600px){
-  .problem{border-top:0}
-  .problem .wrap{padding-block:16px 40px;gap:12px}
+  .problem .wrap{padding-block:36px;gap:12px}
   .problem p{font-size:1rem}
-  .problem .turn{font-size:1.08rem}
-  .shared .wrap{padding-block:40px;gap:20px}
-  .shared .cols>div{padding:16px}
+  .promises{border-top:1.5px solid var(--line)}
+  .promises .wrap{gap:20px;padding-block:36px 40px}
+  .promises .grid{grid-template-columns:1fr;gap:12px}
   .tuesday p{font-size:1.15rem}
   .closing .wrap{padding-block:44px 36px}
   .closing h2{font-size:2.2rem}
