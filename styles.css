@@ -171,7 +171,7 @@ button[disabled]{opacity:.6;cursor:wait}
   footer .wrap{padding-block:24px 36px;font-size:.82rem;gap:12px}
 }
 /* founding: timeline sits to the right edge so the empty space goes between the columns */
-@media (min-width:821px){.founding .wrap{grid-template-columns:minmax(0,520px) max-content;justify-content:space-between;gap:64px}}
+@media (min-width:821px){.founding .wrap{grid-template-columns:minmax(0,520px) max-content;justify-content:space-between;gap:64px;align-items:center}}
 
 /* story sections: the problem, six outcomes in one grid with a normal Tuesday, closing call to join */
 .problem{border-top:1.5px solid var(--line)}
